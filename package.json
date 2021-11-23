@@ -1,17 +1,28 @@
 {
   "name": "vue-sfc-doc",
-  "version": "0.0.1",
+  "version": "0.0.2-beta6",
   "description": "parsing vue sfc props emits for vue3",
-  "main": "src/main.js",
+  "main": "dist/vue-sfc-doc",
   "scripts": {
-    "dev": "node src/main.js",
+    "dev": "node src/index.js",
     "build": "rm -rf dist && rollup -c && chmod a+x dist/vue-sfc-doc",
-    "test": "node src/main.js examples/index.vue --props examples/props.json --emits examples/emits.json"
+    "test": "node src/index.js examples/index.vue --props examples/props.json --emits examples/emits.json"
   },
   "bin": {
     "vue-sfc-doc": "dist/vue-sfc-doc"
   },
+  "files": [
+    "dist/*"
+  ],
   "author": "",
+  "repository": "flywxc/vue-sfc-doc",
+  "keywords": [
+    "vue",
+    "sfc",
+    "props",
+    "emits",
+    "parsing"
+  ],
   "license": "ISC",
   "dependencies": {
     "@babel/generator": "^7.16.0",
@@ -20,17 +31,17 @@
     "@babel/types": "^7.16.0",
     "@types/node": "^16.11.9",
     "@vue/compiler-sfc": "^3.2.22",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "commander": "^8.3.0",
+    "magic-string": "^0.25.7"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
-    "commander": "^8.3.0",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
-    "magic-string": "^0.25.7",
     "rollup": "^2.60.1",
     "rollup-plugin-uglify": "^6.0.4"
   }
