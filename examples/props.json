@@ -1,0 +1,32 @@
+[
+  {
+    "prop": "errorInfo",
+    "type": "object",
+    "description": "错误信息;错误信息111",
+    "default": "{\n  type: \"\",\n  msg: \"\",\n  data: []\n}"
+  },
+  {
+    "prop": "abstractType",
+    "type": "number",
+    "description": "类型",
+    "default": "1"
+  },
+  {
+    "prop": "abstractMode",
+    "type": "boolean",
+    "description": "模式",
+    "default": "true"
+  },
+  {
+    "prop": "aadvid",
+    "type": "string",
+    "description": "广告组ID",
+    "default": "\"\""
+  },
+  {
+    "prop": "value",
+    "type": "array",
+    "description": "数据值",
+    "default": "[]"
+  }
+]

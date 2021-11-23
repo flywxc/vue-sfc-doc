@@ -1,0 +1,26 @@
+[
+  {
+    "prop": "imageModes",
+    "description": "素材类型"
+  },
+  {
+    "prop": "change",
+    "description": "数据改变"
+  },
+  {
+    "prop": "select",
+    "description": "选择"
+  },
+  {
+    "prop": "show-tool",
+    "description": "展示工具"
+  },
+  {
+    "prop": "list",
+    "description": "列表;三四十"
+  },
+  {
+    "prop": "del",
+    "description": "删除"
+  }
+]
