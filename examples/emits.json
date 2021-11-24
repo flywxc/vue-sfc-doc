@@ -1,26 +1,26 @@
 [
   {
-    "prop": "imageModes",
-    "description": "素材类型"
+    "emit": "imageModes",
+    "desc": "素材类型"
   },
   {
-    "prop": "change",
-    "description": "数据改变"
+    "emit": "change",
+    "desc": "数据改变"
   },
   {
-    "prop": "select",
-    "description": "选择"
+    "emit": "select",
+    "desc": "选择"
   },
   {
-    "prop": "show-tool",
-    "description": "展示工具"
+    "emit": "show-tool",
+    "desc": "展示工具"
   },
   {
-    "prop": "list",
-    "description": "列表;三四十"
+    "emit": "list",
+    "desc": "列表;多行注释"
   },
   {
-    "prop": "del",
-    "description": "删除"
+    "emit": "del",
+    "desc": "删除"
   }
 ]

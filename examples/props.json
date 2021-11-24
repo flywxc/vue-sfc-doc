@@ -2,31 +2,31 @@
   {
     "prop": "errorInfo",
     "type": "object",
-    "description": "错误信息;错误信息111",
+    "desc": "错误信息;多行注释自动拼接",
     "default": "{\n  type: \"\",\n  msg: \"\",\n  data: []\n}"
   },
   {
     "prop": "abstractType",
     "type": "number",
-    "description": "类型",
+    "desc": "注释1",
     "default": "1"
   },
   {
     "prop": "abstractMode",
     "type": "boolean",
-    "description": "模式",
+    "desc": "注释2",
     "default": "true"
   },
   {
     "prop": "aadvid",
     "type": "string",
-    "description": "广告组ID",
+    "desc": "注释3",
     "default": "\"\""
   },
   {
     "prop": "value",
     "type": "array",
-    "description": "数据值",
+    "desc": "注释4",
     "default": "[]"
   }
 ]

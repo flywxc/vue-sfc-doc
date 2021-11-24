@@ -1,12 +1,11 @@
 {
   "name": "vue-sfc-doc",
-  "version": "0.0.2-beta6",
+  "version": "0.0.2-beta8",
   "description": "parsing vue sfc props emits for vue3",
   "main": "dist/vue-sfc-doc",
   "scripts": {
-    "dev": "node src/index.js",
     "build": "rm -rf dist && rollup -c && chmod a+x dist/vue-sfc-doc",
-    "test": "node src/index.js examples/index.vue --props examples/props.json --emits examples/emits.json"
+    "dev": "npm run build && dist/vue-sfc-doc examples/index.vue --props examples/props.json --emits examples/emits.json"
   },
   "bin": {
     "vue-sfc-doc": "dist/vue-sfc-doc"

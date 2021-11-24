@@ -31,59 +31,52 @@ export default (options) => {
   const propsData = []; const emitsData = []
   traverse(ast, {
     Identifier (path) {
+      if (path.parent.type === 'ImportSpecifier') return
       if (path.node.name === 'withDefaults') {
-        try {
-          const propsNodes = path.parent.arguments[1]?.properties
-          if (propsNodes?.length) {
-            propsNodes.forEach(node => {
-              const propInfo = {
-                prop: '',
-                type: '',
-                description: '',
-                default: ''
-              }
-              if (t.isArrowFunctionExpression(node.value)) {
-                propInfo.default = generator(node.value.body).code
-              } else {
-                propInfo.default = generator(node.value).code
-              }
-              // eslint-disable-next-line no-eval
-              propInfo.type = getType(eval(`(${propInfo.default})`))
-              propInfo.prop = node.key.name
-              propInfo.description = parseComments(node)
-              propsData.push(propInfo)
-            })
-          }
-        } catch (error) {
-          throw new Error('parsing props error', error)
+        const propsNodes = path.parent.arguments[1]?.properties
+        if (propsNodes?.length) {
+          propsNodes.forEach(node => {
+            const propInfo = {
+              prop: '',
+              type: '',
+              desc: '',
+              default: ''
+            }
+            if (t.isArrowFunctionExpression(node.value)) {
+              propInfo.default = generator(node.value.body).code
+            } else {
+              propInfo.default = generator(node.value).code
+            }
+            // eslint-disable-next-line no-eval
+            propInfo.type = getType(eval(`(${propInfo.default})`))
+            propInfo.prop = node.key.name
+            propInfo.desc = parseComments(node)
+            propsData.push(propInfo)
+          })
         }
       } else if (path.node.name === 'defineEmits') {
-        try {
-          const emitsNode = path.parent.arguments[0]?.elements
-          if (emitsNode?.length) {
-            emitsNode.forEach(node => {
-              const emitInfo = {
-                prop: '',
-                description: ''
-              }
-              if (t.isStringLiteral(node)) {
-                emitInfo.prop = node.value
-              }
-              emitInfo.description = parseComments(node)
-              emitsData.push(emitInfo)
-            })
-          } else if (path.parent.typeParameters) {
-            if (path.parent.typeParameters.params?.[0]?.members) {
-              path.parent.typeParameters.params[0].members.forEach(member => {
-                emitsData.push({
-                  prop: member.parameters[0].typeAnnotation.typeAnnotation.literal.value,
-                  description: parseComments(member)
-                })
-              })
+        const emitsNode = path.parent.arguments[0]?.elements
+        if (emitsNode?.length) {
+          emitsNode.forEach(node => {
+            const emitInfo = {
+              emit: '',
+              desc: ''
             }
+            if (t.isStringLiteral(node)) {
+              emitInfo.emit = node.value
+            }
+            emitInfo.desc = parseComments(node)
+            emitsData.push(emitInfo)
+          })
+        } else if (path.parent.typeParameters) {
+          if (path.parent.typeParameters.params?.[0]?.members) {
+            path.parent.typeParameters.params[0].members.forEach(member => {
+              emitsData.push({
+                emit: member.parameters[0].typeAnnotation.typeAnnotation.literal.value,
+                desc: parseComments(member)
+              })
+            })
           }
-        } catch (error) {
-          throw new Error('parsing emit error', error)
         }
       }
     }

@@ -1,5 +1,6 @@
 <script setup>
-const props = withDefaults(defineProps<IProps>(), {
+import { defineProps, withDefaults } from "vue";
+const props = withDefaults(defineProps < IProps > (), {
   // 错误信息
   // 多行注释自动拼接
   errorInfo: () => ({
@@ -7,13 +8,13 @@ const props = withDefaults(defineProps<IProps>(), {
     msg: "",
     data: [],
   }),
-  // 类型
+  // 注释1
   abstractType: 1,
-  // 模式
+  // 注释2
   abstractMode: true,
-  // 广告组ID
+  // 注释3
   aadvid: "",
-  // 数据值
+  // 注释4
   value: () => []
 });
 
@@ -28,11 +29,11 @@ const emit = defineEmits([
   "show-tool",
 ]);
 
-const emits = defineEmits<{
+const emits = defineEmits < {
   // 列表
-  // 三四十
+  // 多行注释
   (e: "list"): void;
   // 删除
   (e: "del", componentId: string): void;
-}>();
+}> ();
 </script>
