@@ -7,7 +7,12 @@ import fs from 'fs'
 import minimist from 'minimist'
 import { getType, writeJsonFile, parseComments } from './utils'
 
-export default (options) => {
+
+interface IOptions {
+  props: string
+  emits: string
+}
+export default (options: IOptions) => {
   const argvs = minimist(process.argv)
 
   const component = fs.readFileSync(argvs._[2], 'utf8')
@@ -17,7 +22,7 @@ export default (options) => {
     emits: options.emits
   }
 
-  const scriptStr = compiler.parse(component).descriptor.scriptSetup.content
+  const scriptStr = compiler.parse(component)?.descriptor?.scriptSetup?.content || ''
 
   const ast = parser.parse(scriptStr,
     {
@@ -28,7 +33,10 @@ export default (options) => {
     }
   )
 
-  const propsData = []; const emitsData = []
+  writeJsonFile('./ast.json', ast)
+
+  const propsData: Record<string, string>[] = []; const emitsData: Record<string, string>[] = []
+  
   traverse(ast, {
     Identifier (path) {
       if (path.parent.type === 'ImportSpecifier') return
@@ -47,7 +55,6 @@ export default (options) => {
             } else {
               propInfo.default = generator(node.value).code
             }
-            // eslint-disable-next-line no-eval
             propInfo.type = getType(eval(`(${propInfo.default})`))
             propInfo.prop = node.key.name
             propInfo.desc = parseComments(node)

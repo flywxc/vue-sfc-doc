@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"isolatedModules": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"noEmitOnError": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"pretty": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ES2018",
+		"useDefineForClassFields": false
+	},
+	"include": [
+		"src",
+		"cli",
+		"build-plugins",
+		"rollup.config.ts"
+	],
+	"exclude": [
+		"dist",
+		"node_modules",
+		"test"
+	]
+}
