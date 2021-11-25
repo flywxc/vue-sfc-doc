@@ -1,0 +1,1859 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 563,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 39,
+      "column": 0
+    }
+  },
+  "errors": [],
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 563,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 39,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "interpreter": null,
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 1,
+        "end": 49,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 48
+          }
+        },
+        "importKind": "value",
+        "specifiers": [
+          {
+            "type": "ImportSpecifier",
+            "start": 10,
+            "end": 21,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 9
+              },
+              "end": {
+                "line": 2,
+                "column": 20
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 10,
+              "end": 21,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 9
+                },
+                "end": {
+                  "line": 2,
+                  "column": 20
+                },
+                "identifierName": "defineProps"
+              },
+              "name": "defineProps"
+            },
+            "importKind": "value",
+            "local": {
+              "type": "Identifier",
+              "start": 10,
+              "end": 21,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 9
+                },
+                "end": {
+                  "line": 2,
+                  "column": 20
+                },
+                "identifierName": "defineProps"
+              },
+              "name": "defineProps"
+            }
+          },
+          {
+            "type": "ImportSpecifier",
+            "start": 23,
+            "end": 35,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 22
+              },
+              "end": {
+                "line": 2,
+                "column": 34
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 23,
+              "end": 35,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 22
+                },
+                "end": {
+                  "line": 2,
+                  "column": 34
+                },
+                "identifierName": "withDefaults"
+              },
+              "name": "withDefaults"
+            },
+            "importKind": "value",
+            "local": {
+              "type": "Identifier",
+              "start": 23,
+              "end": 35,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 22
+                },
+                "end": {
+                  "line": 2,
+                  "column": 34
+                },
+                "identifierName": "withDefaults"
+              },
+              "name": "withDefaults"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 43,
+          "end": 48,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 42
+            },
+            "end": {
+              "line": 2,
+              "column": 47
+            }
+          },
+          "extra": {
+            "rawValue": "vue",
+            "raw": "\"vue\""
+          },
+          "value": "vue"
+        }
+      },
+      {
+        "type": "VariableDeclaration",
+        "start": 50,
+        "end": 311,
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 0
+          },
+          "end": {
+            "line": 19,
+            "column": 3
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 56,
+            "end": 310,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 6
+              },
+              "end": {
+                "line": 19,
+                "column": 2
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 56,
+              "end": 61,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 6
+                },
+                "end": {
+                  "line": 3,
+                  "column": 11
+                },
+                "identifierName": "props"
+              },
+              "name": "props"
+            },
+            "init": {
+              "type": "CallExpression",
+              "start": 64,
+              "end": 310,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 14
+                },
+                "end": {
+                  "line": 19,
+                  "column": 2
+                }
+              },
+              "callee": {
+                "type": "Identifier",
+                "start": 64,
+                "end": 76,
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 14
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 26
+                  },
+                  "identifierName": "withDefaults"
+                },
+                "name": "withDefaults"
+              },
+              "arguments": [
+                {
+                  "type": "CallExpression",
+                  "start": 77,
+                  "end": 102,
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 27
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 52
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 77,
+                    "end": 88,
+                    "loc": {
+                      "start": {
+                        "line": 3,
+                        "column": 27
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 38
+                      },
+                      "identifierName": "defineProps"
+                    },
+                    "name": "defineProps"
+                  },
+                  "arguments": [],
+                  "typeParameters": {
+                    "type": "TSTypeParameterInstantiation",
+                    "start": 89,
+                    "end": 99,
+                    "loc": {
+                      "start": {
+                        "line": 3,
+                        "column": 39
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 49
+                      }
+                    },
+                    "params": [
+                      {
+                        "type": "TSTypeReference",
+                        "start": 91,
+                        "end": 97,
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 41
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 47
+                          }
+                        },
+                        "typeName": {
+                          "type": "Identifier",
+                          "start": 91,
+                          "end": 97,
+                          "loc": {
+                            "start": {
+                              "line": 3,
+                              "column": 41
+                            },
+                            "end": {
+                              "line": 3,
+                              "column": 47
+                            },
+                            "identifierName": "IProps"
+                          },
+                          "name": "IProps"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "ObjectExpression",
+                  "start": 104,
+                  "end": 309,
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 54
+                    },
+                    "end": {
+                      "line": 19,
+                      "column": 1
+                    }
+                  },
+                  "properties": [
+                    {
+                      "type": "ObjectProperty",
+                      "start": 132,
+                      "end": 197,
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 4
+                        }
+                      },
+                      "method": false,
+                      "key": {
+                        "type": "Identifier",
+                        "start": 132,
+                        "end": 141,
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 11
+                          },
+                          "identifierName": "errorInfo"
+                        },
+                        "name": "errorInfo"
+                      },
+                      "computed": false,
+                      "shorthand": false,
+                      "value": {
+                        "type": "ArrowFunctionExpression",
+                        "start": 143,
+                        "end": 197,
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 10,
+                            "column": 4
+                          }
+                        },
+                        "id": null,
+                        "generator": false,
+                        "async": false,
+                        "params": [],
+                        "body": {
+                          "type": "ObjectExpression",
+                          "start": 150,
+                          "end": 196,
+                          "loc": {
+                            "start": {
+                              "line": 6,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 10,
+                              "column": 3
+                            }
+                          },
+                          "properties": [
+                            {
+                              "type": "ObjectProperty",
+                              "start": 156,
+                              "end": 164,
+                              "loc": {
+                                "start": {
+                                  "line": 7,
+                                  "column": 4
+                                },
+                                "end": {
+                                  "line": 7,
+                                  "column": 12
+                                }
+                              },
+                              "method": false,
+                              "key": {
+                                "type": "Identifier",
+                                "start": 156,
+                                "end": 160,
+                                "loc": {
+                                  "start": {
+                                    "line": 7,
+                                    "column": 4
+                                  },
+                                  "end": {
+                                    "line": 7,
+                                    "column": 8
+                                  },
+                                  "identifierName": "type"
+                                },
+                                "name": "type"
+                              },
+                              "computed": false,
+                              "shorthand": false,
+                              "value": {
+                                "type": "StringLiteral",
+                                "start": 162,
+                                "end": 164,
+                                "loc": {
+                                  "start": {
+                                    "line": 7,
+                                    "column": 10
+                                  },
+                                  "end": {
+                                    "line": 7,
+                                    "column": 12
+                                  }
+                                },
+                                "extra": {
+                                  "rawValue": "",
+                                  "raw": "\"\""
+                                },
+                                "value": ""
+                              }
+                            },
+                            {
+                              "type": "ObjectProperty",
+                              "start": 170,
+                              "end": 177,
+                              "loc": {
+                                "start": {
+                                  "line": 8,
+                                  "column": 4
+                                },
+                                "end": {
+                                  "line": 8,
+                                  "column": 11
+                                }
+                              },
+                              "method": false,
+                              "key": {
+                                "type": "Identifier",
+                                "start": 170,
+                                "end": 173,
+                                "loc": {
+                                  "start": {
+                                    "line": 8,
+                                    "column": 4
+                                  },
+                                  "end": {
+                                    "line": 8,
+                                    "column": 7
+                                  },
+                                  "identifierName": "msg"
+                                },
+                                "name": "msg"
+                              },
+                              "computed": false,
+                              "shorthand": false,
+                              "value": {
+                                "type": "StringLiteral",
+                                "start": 175,
+                                "end": 177,
+                                "loc": {
+                                  "start": {
+                                    "line": 8,
+                                    "column": 9
+                                  },
+                                  "end": {
+                                    "line": 8,
+                                    "column": 11
+                                  }
+                                },
+                                "extra": {
+                                  "rawValue": "",
+                                  "raw": "\"\""
+                                },
+                                "value": ""
+                              }
+                            },
+                            {
+                              "type": "ObjectProperty",
+                              "start": 183,
+                              "end": 191,
+                              "loc": {
+                                "start": {
+                                  "line": 9,
+                                  "column": 4
+                                },
+                                "end": {
+                                  "line": 9,
+                                  "column": 12
+                                }
+                              },
+                              "method": false,
+                              "key": {
+                                "type": "Identifier",
+                                "start": 183,
+                                "end": 187,
+                                "loc": {
+                                  "start": {
+                                    "line": 9,
+                                    "column": 4
+                                  },
+                                  "end": {
+                                    "line": 9,
+                                    "column": 8
+                                  },
+                                  "identifierName": "data"
+                                },
+                                "name": "data"
+                              },
+                              "computed": false,
+                              "shorthand": false,
+                              "value": {
+                                "type": "ArrayExpression",
+                                "start": 189,
+                                "end": 191,
+                                "loc": {
+                                  "start": {
+                                    "line": 9,
+                                    "column": 10
+                                  },
+                                  "end": {
+                                    "line": 9,
+                                    "column": 12
+                                  }
+                                },
+                                "elements": []
+                              }
+                            }
+                          ],
+                          "extra": {
+                            "trailingComma": 191,
+                            "parenthesized": true,
+                            "parenStart": 149
+                          }
+                        }
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " 错误信息",
+                          "start": 108,
+                          "end": 115,
+                          "loc": {
+                            "start": {
+                              "line": 4,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 4,
+                              "column": 9
+                            }
+                          }
+                        },
+                        {
+                          "type": "CommentLine",
+                          "value": " 多行注释自动拼接",
+                          "start": 118,
+                          "end": 129,
+                          "loc": {
+                            "start": {
+                              "line": 5,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 13
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ObjectProperty",
+                      "start": 210,
+                      "end": 225,
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 12,
+                          "column": 17
+                        }
+                      },
+                      "method": false,
+                      "key": {
+                        "type": "Identifier",
+                        "start": 210,
+                        "end": 222,
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 14
+                          },
+                          "identifierName": "abstractType"
+                        },
+                        "name": "abstractType"
+                      },
+                      "computed": false,
+                      "shorthand": false,
+                      "value": {
+                        "type": "NumericLiteral",
+                        "start": 224,
+                        "end": 225,
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 16
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 17
+                          }
+                        },
+                        "extra": {
+                          "rawValue": 1,
+                          "raw": "1"
+                        },
+                        "value": 1
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " 注释1",
+                          "start": 201,
+                          "end": 207,
+                          "loc": {
+                            "start": {
+                              "line": 11,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 11,
+                              "column": 8
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ObjectProperty",
+                      "start": 238,
+                      "end": 256,
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 20
+                        }
+                      },
+                      "method": false,
+                      "key": {
+                        "type": "Identifier",
+                        "start": 238,
+                        "end": 250,
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 14
+                          },
+                          "identifierName": "abstractMode"
+                        },
+                        "name": "abstractMode"
+                      },
+                      "computed": false,
+                      "shorthand": false,
+                      "value": {
+                        "type": "BooleanLiteral",
+                        "start": 252,
+                        "end": 256,
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 16
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 20
+                          }
+                        },
+                        "value": true
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " 注释2",
+                          "start": 229,
+                          "end": 235,
+                          "loc": {
+                            "start": {
+                              "line": 13,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 13,
+                              "column": 8
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ObjectProperty",
+                      "start": 269,
+                      "end": 279,
+                      "loc": {
+                        "start": {
+                          "line": 16,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 16,
+                          "column": 12
+                        }
+                      },
+                      "method": false,
+                      "key": {
+                        "type": "Identifier",
+                        "start": 269,
+                        "end": 275,
+                        "loc": {
+                          "start": {
+                            "line": 16,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 16,
+                            "column": 8
+                          },
+                          "identifierName": "aadvid"
+                        },
+                        "name": "aadvid"
+                      },
+                      "computed": false,
+                      "shorthand": false,
+                      "value": {
+                        "type": "StringLiteral",
+                        "start": 277,
+                        "end": 279,
+                        "loc": {
+                          "start": {
+                            "line": 16,
+                            "column": 10
+                          },
+                          "end": {
+                            "line": 16,
+                            "column": 12
+                          }
+                        },
+                        "extra": {
+                          "rawValue": "",
+                          "raw": "\"\""
+                        },
+                        "value": ""
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " 注释3",
+                          "start": 260,
+                          "end": 266,
+                          "loc": {
+                            "start": {
+                              "line": 15,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 8
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ObjectProperty",
+                      "start": 292,
+                      "end": 307,
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 17
+                        }
+                      },
+                      "method": false,
+                      "key": {
+                        "type": "Identifier",
+                        "start": 292,
+                        "end": 297,
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 7
+                          },
+                          "identifierName": "value"
+                        },
+                        "name": "value"
+                      },
+                      "computed": false,
+                      "shorthand": false,
+                      "value": {
+                        "type": "ArrowFunctionExpression",
+                        "start": 299,
+                        "end": 307,
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 9
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 17
+                          }
+                        },
+                        "id": null,
+                        "generator": false,
+                        "async": false,
+                        "params": [],
+                        "body": {
+                          "type": "ArrayExpression",
+                          "start": 305,
+                          "end": 307,
+                          "loc": {
+                            "start": {
+                              "line": 18,
+                              "column": 15
+                            },
+                            "end": {
+                              "line": 18,
+                              "column": 17
+                            }
+                          },
+                          "elements": []
+                        }
+                      },
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " 注释4",
+                          "start": 283,
+                          "end": 289,
+                          "loc": {
+                            "start": {
+                              "line": 17,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 17,
+                              "column": 8
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "kind": "const"
+      },
+      {
+        "type": "VariableDeclaration",
+        "start": 313,
+        "end": 436,
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 0
+          },
+          "end": {
+            "line": 30,
+            "column": 3
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 319,
+            "end": 435,
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 6
+              },
+              "end": {
+                "line": 30,
+                "column": 2
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 319,
+              "end": 323,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 6
+                },
+                "end": {
+                  "line": 21,
+                  "column": 10
+                },
+                "identifierName": "emit"
+              },
+              "name": "emit"
+            },
+            "init": {
+              "type": "CallExpression",
+              "start": 326,
+              "end": 435,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 13
+                },
+                "end": {
+                  "line": 30,
+                  "column": 2
+                }
+              },
+              "callee": {
+                "type": "Identifier",
+                "start": 326,
+                "end": 337,
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 24
+                  },
+                  "identifierName": "defineEmits"
+                },
+                "name": "defineEmits"
+              },
+              "arguments": [
+                {
+                  "type": "ArrayExpression",
+                  "start": 338,
+                  "end": 434,
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 25
+                    },
+                    "end": {
+                      "line": 30,
+                      "column": 1
+                    }
+                  },
+                  "extra": {
+                    "trailingComma": 431
+                  },
+                  "elements": [
+                    {
+                      "type": "StringLiteral",
+                      "start": 352,
+                      "end": 364,
+                      "loc": {
+                        "start": {
+                          "line": 23,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 14
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "imageModes",
+                        "raw": "\"imageModes\""
+                      },
+                      "value": "imageModes",
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " 素材类型",
+                          "start": 342,
+                          "end": 349,
+                          "loc": {
+                            "start": {
+                              "line": 22,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 22,
+                              "column": 9
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "StringLiteral",
+                      "start": 378,
+                      "end": 386,
+                      "loc": {
+                        "start": {
+                          "line": 25,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 25,
+                          "column": 10
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "change",
+                        "raw": "\"change\""
+                      },
+                      "value": "change",
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " 数据改变",
+                          "start": 368,
+                          "end": 375,
+                          "loc": {
+                            "start": {
+                              "line": 24,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 24,
+                              "column": 9
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "StringLiteral",
+                      "start": 398,
+                      "end": 406,
+                      "loc": {
+                        "start": {
+                          "line": 27,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 27,
+                          "column": 10
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "select",
+                        "raw": "\"select\""
+                      },
+                      "value": "select",
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " 选择",
+                          "start": 390,
+                          "end": 395,
+                          "loc": {
+                            "start": {
+                              "line": 26,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 26,
+                              "column": 7
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "StringLiteral",
+                      "start": 420,
+                      "end": 431,
+                      "loc": {
+                        "start": {
+                          "line": 29,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 29,
+                          "column": 13
+                        }
+                      },
+                      "extra": {
+                        "rawValue": "show-tool",
+                        "raw": "\"show-tool\""
+                      },
+                      "value": "show-tool",
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " 展示工具",
+                          "start": 410,
+                          "end": 417,
+                          "loc": {
+                            "start": {
+                              "line": 28,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 28,
+                              "column": 9
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "kind": "const"
+      },
+      {
+        "type": "VariableDeclaration",
+        "start": 438,
+        "end": 562,
+        "loc": {
+          "start": {
+            "line": 32,
+            "column": 0
+          },
+          "end": {
+            "line": 38,
+            "column": 6
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 444,
+            "end": 561,
+            "loc": {
+              "start": {
+                "line": 32,
+                "column": 6
+              },
+              "end": {
+                "line": 38,
+                "column": 5
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 444,
+              "end": 449,
+              "loc": {
+                "start": {
+                  "line": 32,
+                  "column": 6
+                },
+                "end": {
+                  "line": 32,
+                  "column": 11
+                },
+                "identifierName": "emits"
+              },
+              "name": "emits"
+            },
+            "init": {
+              "type": "CallExpression",
+              "start": 452,
+              "end": 561,
+              "loc": {
+                "start": {
+                  "line": 32,
+                  "column": 14
+                },
+                "end": {
+                  "line": 38,
+                  "column": 5
+                }
+              },
+              "callee": {
+                "type": "Identifier",
+                "start": 452,
+                "end": 463,
+                "loc": {
+                  "start": {
+                    "line": 32,
+                    "column": 14
+                  },
+                  "end": {
+                    "line": 32,
+                    "column": 25
+                  },
+                  "identifierName": "defineEmits"
+                },
+                "name": "defineEmits"
+              },
+              "arguments": [],
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "start": 464,
+                "end": 558,
+                "loc": {
+                  "start": {
+                    "line": 32,
+                    "column": 26
+                  },
+                  "end": {
+                    "line": 38,
+                    "column": 2
+                  }
+                },
+                "params": [
+                  {
+                    "type": "TSTypeLiteral",
+                    "start": 466,
+                    "end": 557,
+                    "loc": {
+                      "start": {
+                        "line": 32,
+                        "column": 28
+                      },
+                      "end": {
+                        "line": 38,
+                        "column": 1
+                      }
+                    },
+                    "members": [
+                      {
+                        "type": "TSCallSignatureDeclaration",
+                        "start": 488,
+                        "end": 506,
+                        "loc": {
+                          "start": {
+                            "line": 35,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 35,
+                            "column": 20
+                          }
+                        },
+                        "parameters": [
+                          {
+                            "type": "Identifier",
+                            "start": 489,
+                            "end": 498,
+                            "loc": {
+                              "start": {
+                                "line": 35,
+                                "column": 3
+                              },
+                              "end": {
+                                "line": 35,
+                                "column": 12
+                              },
+                              "identifierName": "e"
+                            },
+                            "name": "e",
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "start": 490,
+                              "end": 498,
+                              "loc": {
+                                "start": {
+                                  "line": 35,
+                                  "column": 4
+                                },
+                                "end": {
+                                  "line": 35,
+                                  "column": 12
+                                }
+                              },
+                              "typeAnnotation": {
+                                "type": "TSLiteralType",
+                                "start": 492,
+                                "end": 498,
+                                "loc": {
+                                  "start": {
+                                    "line": 35,
+                                    "column": 6
+                                  },
+                                  "end": {
+                                    "line": 35,
+                                    "column": 12
+                                  }
+                                },
+                                "literal": {
+                                  "type": "StringLiteral",
+                                  "start": 492,
+                                  "end": 498,
+                                  "loc": {
+                                    "start": {
+                                      "line": 35,
+                                      "column": 6
+                                    },
+                                    "end": {
+                                      "line": 35,
+                                      "column": 12
+                                    }
+                                  },
+                                  "extra": {
+                                    "rawValue": "list",
+                                    "raw": "\"list\""
+                                  },
+                                  "value": "list"
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "start": 499,
+                          "end": 505,
+                          "loc": {
+                            "start": {
+                              "line": 35,
+                              "column": 13
+                            },
+                            "end": {
+                              "line": 35,
+                              "column": 19
+                            }
+                          },
+                          "typeAnnotation": {
+                            "type": "TSVoidKeyword",
+                            "start": 501,
+                            "end": 505,
+                            "loc": {
+                              "start": {
+                                "line": 35,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 35,
+                                "column": 19
+                              }
+                            }
+                          }
+                        },
+                        "trailingComments": [
+                          {
+                            "type": "CommentLine",
+                            "value": " 删除",
+                            "start": 509,
+                            "end": 514,
+                            "loc": {
+                              "start": {
+                                "line": 36,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 36,
+                                "column": 7
+                              }
+                            }
+                          }
+                        ],
+                        "leadingComments": [
+                          {
+                            "type": "CommentLine",
+                            "value": " 列表",
+                            "start": 470,
+                            "end": 475,
+                            "loc": {
+                              "start": {
+                                "line": 33,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 33,
+                                "column": 7
+                              }
+                            }
+                          },
+                          {
+                            "type": "CommentLine",
+                            "value": " 多行注释",
+                            "start": 478,
+                            "end": 485,
+                            "loc": {
+                              "start": {
+                                "line": 34,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 34,
+                                "column": 9
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "TSCallSignatureDeclaration",
+                        "start": 517,
+                        "end": 555,
+                        "loc": {
+                          "start": {
+                            "line": 37,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 37,
+                            "column": 40
+                          }
+                        },
+                        "parameters": [
+                          {
+                            "type": "Identifier",
+                            "start": 518,
+                            "end": 526,
+                            "loc": {
+                              "start": {
+                                "line": 37,
+                                "column": 3
+                              },
+                              "end": {
+                                "line": 37,
+                                "column": 11
+                              },
+                              "identifierName": "e"
+                            },
+                            "name": "e",
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "start": 519,
+                              "end": 526,
+                              "loc": {
+                                "start": {
+                                  "line": 37,
+                                  "column": 4
+                                },
+                                "end": {
+                                  "line": 37,
+                                  "column": 11
+                                }
+                              },
+                              "typeAnnotation": {
+                                "type": "TSLiteralType",
+                                "start": 521,
+                                "end": 526,
+                                "loc": {
+                                  "start": {
+                                    "line": 37,
+                                    "column": 6
+                                  },
+                                  "end": {
+                                    "line": 37,
+                                    "column": 11
+                                  }
+                                },
+                                "literal": {
+                                  "type": "StringLiteral",
+                                  "start": 521,
+                                  "end": 526,
+                                  "loc": {
+                                    "start": {
+                                      "line": 37,
+                                      "column": 6
+                                    },
+                                    "end": {
+                                      "line": 37,
+                                      "column": 11
+                                    }
+                                  },
+                                  "extra": {
+                                    "rawValue": "del",
+                                    "raw": "\"del\""
+                                  },
+                                  "value": "del"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "type": "Identifier",
+                            "start": 528,
+                            "end": 547,
+                            "loc": {
+                              "start": {
+                                "line": 37,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 37,
+                                "column": 32
+                              },
+                              "identifierName": "componentId"
+                            },
+                            "name": "componentId",
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "start": 539,
+                              "end": 547,
+                              "loc": {
+                                "start": {
+                                  "line": 37,
+                                  "column": 24
+                                },
+                                "end": {
+                                  "line": 37,
+                                  "column": 32
+                                }
+                              },
+                              "typeAnnotation": {
+                                "type": "TSStringKeyword",
+                                "start": 541,
+                                "end": 547,
+                                "loc": {
+                                  "start": {
+                                    "line": 37,
+                                    "column": 26
+                                  },
+                                  "end": {
+                                    "line": 37,
+                                    "column": 32
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "start": 548,
+                          "end": 554,
+                          "loc": {
+                            "start": {
+                              "line": 37,
+                              "column": 33
+                            },
+                            "end": {
+                              "line": 37,
+                              "column": 39
+                            }
+                          },
+                          "typeAnnotation": {
+                            "type": "TSVoidKeyword",
+                            "start": 550,
+                            "end": 554,
+                            "loc": {
+                              "start": {
+                                "line": 37,
+                                "column": 35
+                              },
+                              "end": {
+                                "line": 37,
+                                "column": 39
+                              }
+                            }
+                          }
+                        },
+                        "leadingComments": [
+                          {
+                            "type": "CommentLine",
+                            "value": " 删除",
+                            "start": 509,
+                            "end": 514,
+                            "loc": {
+                              "start": {
+                                "line": 36,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 36,
+                                "column": 7
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "kind": "const"
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentLine",
+      "value": " 错误信息",
+      "start": 108,
+      "end": 115,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 2
+        },
+        "end": {
+          "line": 4,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 多行注释自动拼接",
+      "start": 118,
+      "end": 129,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 2
+        },
+        "end": {
+          "line": 5,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 注释1",
+      "start": 201,
+      "end": 207,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 11,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 注释2",
+      "start": 229,
+      "end": 235,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 2
+        },
+        "end": {
+          "line": 13,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 注释3",
+      "start": 260,
+      "end": 266,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 2
+        },
+        "end": {
+          "line": 15,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 注释4",
+      "start": 283,
+      "end": 289,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 2
+        },
+        "end": {
+          "line": 17,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 素材类型",
+      "start": 342,
+      "end": 349,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 2
+        },
+        "end": {
+          "line": 22,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 数据改变",
+      "start": 368,
+      "end": 375,
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 2
+        },
+        "end": {
+          "line": 24,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 选择",
+      "start": 390,
+      "end": 395,
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 2
+        },
+        "end": {
+          "line": 26,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 展示工具",
+      "start": 410,
+      "end": 417,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 2
+        },
+        "end": {
+          "line": 28,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 列表",
+      "start": 470,
+      "end": 475,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 2
+        },
+        "end": {
+          "line": 33,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 多行注释",
+      "start": 478,
+      "end": 485,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 2
+        },
+        "end": {
+          "line": 34,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " 删除",
+      "start": 509,
+      "end": 514,
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 2
+        },
+        "end": {
+          "line": 36,
+          "column": 7
+        }
+      }
+    }
+  ]
+}

@@ -1,16 +1,18 @@
-import commander from 'commander'
+import { Command } from 'commander'
 import { description, version } from '../package.json'
 import main from './main'
 
-commander
+const program = new Command()
+
+program
   .version(version, '-v, --version')
   .description(description)
 
-commander
+program
   .option('-p, --props <path>', 'props output file')
   .option('-e, --emits <path>', 'emits output file')
   .action((options) => {
     return main(options)
   })
 
-commander.parse(process.argv)
+program.parse(process.argv)
